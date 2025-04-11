@@ -1,0 +1,112 @@
+@font-face {
+    font-family: combold;
+    src: url('./Fonts/Comfortaa-Bold.ttf');
+}
+
+@font-face {
+    font-family: comregular;
+    src: url('./Fonts/Comfortaa-Regular.ttf');
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+}
+
+body{
+    height: 100vh;
+    width: 100vw;
+    background-color: #0B0B0D;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main{
+    height: 50vh;
+    width: 25vw;
+    background-color: #15171F;
+    border-radius: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    box-shadow: rgba(59, 146, 246, 0.25) 0px 54px 55px, rgba(59, 146, 246, 0.12) 0px -12px 30px, rgba(59, 146, 246, 0.12) 0px 4px 6px, rgba(59, 146, 246, 0.17) 0px 12px 13px, rgba(59, 146, 246, 0.09) 0px -3px 5px;
+}
+
+main h2{
+    position: absolute;
+    top: 2.3rem;
+    font-family: comregular;
+    font-size: 2rem;
+    color: white;
+}
+
+main form{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+main form input{
+    padding: 0.5rem 1.5rem;
+    border-radius: 1rem;
+    text-align: left;
+    font-family: comregular;
+    font-size: 1.1rem;
+    border:1px solid white;
+    background-color: #15171F;
+    color: white;
+    outline: none;
+}
+
+main form input::placeholder{
+    font-size: 0.9em;
+    color: #B5B7BD;
+}
+
+main form p{
+    margin-bottom: 1.3rem;
+    font-size: 1.02rem;
+    font-family: comregular;
+    color: white;
+}
+
+main form p a{
+    text-decoration: none ;
+    color: rgb(59, 146, 246);
+    font-weight: 700;
+}
+
+main form button{
+    padding: 0.6rem 1.2rem;
+    color:white ;
+    border: none ;
+    background-color: rgb(64, 51, 240);
+    border-radius: 1rem;
+    font-size: 1.02em;
+    font-weight: 500;
+}
+
+@media only screen and (width <= 1200px){
+    main form input{
+        padding: 0.4rem 1.2rem;
+    }
+
+    main{
+        width: 85vw;
+    }
+}
+
+@media only screen and (width <= 500px){
+    main h2{
+        top: 1rem;
+    }
+}

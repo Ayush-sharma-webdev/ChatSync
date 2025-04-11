@@ -1,0 +1,199 @@
+@font-face {
+    font-family: combold;
+    src: url('./Fonts/Comfortaa-Bold.ttf');
+}
+
+@font-face {
+    font-family: comregular;
+    src: url('./Fonts/Comfortaa-Regular.ttf');
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+}
+
+main{
+    height: 100vh;
+    width: 100vw;
+    background-color: #0B0B0D;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.primary{
+    height: 70vh;
+    width: 50vw;
+    background-color: #1A1C22;
+    border-radius: 2rem;
+    box-shadow: rgb(175, 177, 179) 0px 20px 30px -10px;
+    overflow: hidden;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 12vh;
+}
+
+.logo img{
+    height: 65%;
+    width: 100%;
+    object-fit: contain;
+}
+
+.primary .content{
+    height: 58vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.primary .content .register{
+    height: 100%;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+    text-align: center;
+}
+
+.primary .content .register a{
+    padding: 1rem 2rem;
+    text-align: center;
+    background-color: #2663FF;
+    text-decoration: none;
+    color: white;
+    border-radius: 1rem;
+    font-size: 1.4rem ;
+    font-family: combold;
+}
+
+.primary .content .register p{
+    font-size: 1.112rem;
+    font-family: comregular;
+    line-height: 1.4rem;
+}
+
+.primary .content .register h1{
+    font-size: 2.4em;
+    margin-bottom: 0.7rem;
+    font-family: combold;
+}
+
+.primary .content .register :nth-last-child(2){
+    margin-bottom: 0.6rem;
+    margin-top: 0.6rem;
+}
+
+.primary .content .login{
+    height: 100%;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+    text-align: center;
+}
+
+.primary .content .login h1{
+    font-size: 2.4em;
+    margin-bottom: 0.7rem;
+    font-family: combold;
+}
+
+.primary .content .login  p{
+    font-size: 1.112rem;
+    font-family: comregular;
+    line-height: 1.4rem;
+}
+
+.primary .content .login :nth-last-child(2){
+    margin-bottom: 0.6rem;
+    margin-top: 0.6rem;
+}
+
+.primary .content .login a{
+    padding: 1rem 2rem;
+    text-align: center;
+    background-color: #ff2679;
+    text-decoration: none;
+    color: white;
+    border-radius: 1rem;
+    font-size: 1.4rem ;
+    font-family: combold;
+}
+
+@media only screen and (width <= 1300px){
+    .primary{
+        height: 80vh;
+    }
+    .primary .content{
+        flex-direction: column;
+        height: 90%;
+        flex-wrap: wrap;
+    }
+    .primary .content .register{
+        width: 100%;
+        height: 50%;
+    }
+    .primary .content .login{
+        height: 50%;
+        width: 100%;
+    }
+}
+
+@media only screen and (width <= 900px ){
+    .logo{
+        height: 9vh;
+    }
+    .logo img{
+        height: 55%;
+    }
+}
+
+@media only screen and (width <= 500px){
+    .primary{
+        width: 80vw;
+    }
+}
+
+@media only screen and (width <= 800px){
+    .primary .content .register p{
+        font-size: 1rem;
+    }
+    .primary .content .register h1{
+        font-size: 1.7rem;
+    }
+    .primary .content .register a{
+        padding: 0.6rem 1.2rem;
+        font-size: 1.7rem;
+    }
+
+    .primary .content .login p{
+        font-size: 1rem;
+    }
+    .primary .content .login h1{
+        font-size: 1.7rem;
+    }
+    .primary .content .login a{
+        padding: 0.6rem 1.2rem;
+        font-size: 1.7rem;
+    }
+}
